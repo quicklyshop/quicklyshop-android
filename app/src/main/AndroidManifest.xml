@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cosw.quicklyshop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.cosw.quicklyshop.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cosw.quicklyshop.view.CreateAccountActivity"
+            android:parentActivityName="com.cosw.quicklyshop.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cosw.quicklyshop.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.cosw.quicklyshop.ReferenciaActivity"
+            android:label="@string/title_activity_referencia"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.cosw.quicklyshop.view.ContainerActivity" />
+        <activity android:name="com.cosw.quicklyshop.view.PictureDetailActivity"
+            android:parentActivityName="com.cosw.quicklyshop.view.ContainerActivity">
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cosw.quicklyshop.view.ContainerActivity" />
+        </activity>
+    </application>
+
+</manifest>
