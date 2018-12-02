@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.cosw.quicklyshop.view.ContainerActivity;
 import com.cosw.quicklyshop.view.CreateAccountActivity;
+import com.cosw.quicklyshop.view.Payment;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void goPayment(View view){
-        Intent intent = new Intent(this, Pay.class);
+        Intent intent = new Intent(this, Payment.class);
         startActivity(intent);
     }
 

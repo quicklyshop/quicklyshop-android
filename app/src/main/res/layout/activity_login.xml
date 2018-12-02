@@ -90,6 +90,15 @@
                     android:onClick="goHome"
                     />
 
+                <Button
+                    android:id="@+id/payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pago"
+                    android:theme="@style/RaisedButtonDark"
+                    android:onClick="goPayment"
+                    />
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

@@ -7,11 +7,12 @@ import android.support.v7.widget.Toolbar;
 import com.cosw.quicklyshop.R;
 
 public class Payment  extends AppCompatActivity{
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_account);
-        showToolbar(getResources().getString(R.string.toolbar_tittle_createaccount), true);
+        setContentView(R.layout.payment);
+        showToolbar("Hacer pago", true);
 
     }
 
