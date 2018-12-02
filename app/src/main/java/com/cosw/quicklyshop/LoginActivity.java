@@ -41,13 +41,26 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public void onResume() {
+        final TextInputEditText username = (TextInputEditText) findViewById(R.id.username);
+        final TextInputEditText password = (TextInputEditText) findViewById(R.id.password);
+
+        username.setEnabled(true);
+        password.setEnabled(true);
+        super.onResume();
+    }
+
     public void loginToServer(final View view) {
         LoginController lc = ControllerFactory.getInstance().getLoginController();
 
         final TextInputEditText username = (TextInputEditText) findViewById(R.id.username);
         final TextInputEditText password = (TextInputEditText) findViewById(R.id.password);
 
-        lc.loginWithUsernameAndPassword(username.getText().toString(), password.getText().toString(), new Callback<String>() { // TODO
+        username.setEnabled(false);
+        password.setEnabled(false);
+
+        lc.loginWithUsernameAndPassword(username.getText().toString(), password.getText().toString(), new Callback<String>() {
             @Override
             public void onSuccess(String... inputs) {
                 Log.d(TAG, "Success getting token: " + Arrays.toString(inputs));
@@ -88,6 +101,9 @@ public class LoginActivity extends AppCompatActivity {
             public void onFailed(String error) {
                 Log.e(TAG, "Error: " + error);
                 Toast.makeText(getApplicationContext(), "Failed to login: " + error, Toast.LENGTH_SHORT).show();
+
+                username.setEnabled(true);
+                password.setEnabled(true);
             }
         });
     }
