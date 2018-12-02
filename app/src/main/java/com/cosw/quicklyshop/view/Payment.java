@@ -12,7 +12,7 @@ public class Payment  extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.payment);
-        showToolbar("Hacer pago", true);
+        showToolbar(getResources().getString(R.string.toolbar_tittle_payment), true);
 
     }
 

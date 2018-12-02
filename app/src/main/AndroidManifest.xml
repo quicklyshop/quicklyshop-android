@@ -32,6 +32,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.view.ContainerActivity" />
         </activity>
+        <activity
+            android:name="com.cosw.quicklyshop.view.Payment"
+            android:parentActivityName="com.cosw.quicklyshop.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cosw.quicklyshop.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>
