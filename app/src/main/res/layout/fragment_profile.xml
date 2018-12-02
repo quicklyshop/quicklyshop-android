@@ -7,6 +7,8 @@
     android:fitsSystemWindows="true"
     tools:context="com.cosw.quicklyshop.view.fragment.ProfileFragment">
 
+
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarProfile"
         android:layout_width="match_parent"

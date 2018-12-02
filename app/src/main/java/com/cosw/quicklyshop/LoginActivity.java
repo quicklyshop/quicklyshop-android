@@ -1,5 +1,6 @@
 package com.cosw.quicklyshop;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.view.View;
 
 import com.cosw.quicklyshop.view.ContainerActivity;
 import com.cosw.quicklyshop.view.CreateAccountActivity;
+import com.cosw.quicklyshop.view.fragment.ProfileFragment;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -24,4 +26,10 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
     }
+
+    /*public void goProfile(Fragment fragment){
+        Intent intent = new Intent(this, ProfileFragment.class);
+        startActivityFromFragment(intent,ProfileFragment);
+    }*/
+
 }
