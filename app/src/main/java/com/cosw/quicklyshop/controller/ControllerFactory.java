@@ -1,6 +1,7 @@
 package com.cosw.quicklyshop.controller;
 
 import com.cosw.quicklyshop.controller.impl.LoginControllerImpl;
+import com.cosw.quicklyshop.controller.impl.SessionControllerImpl;
 
 public class ControllerFactory {
 
@@ -17,13 +18,18 @@ public class ControllerFactory {
     /* ---------- */
 
     private LoginController loginController;
+    private SessionController sessionController;
 
     private ControllerFactory() {
         loginController = new LoginControllerImpl();
+        sessionController = new SessionControllerImpl();
     }
 
     public LoginController getLoginController() {
         return loginController;
     }
 
+    public SessionController getSessionController() {
+        return sessionController;
+    }
 }

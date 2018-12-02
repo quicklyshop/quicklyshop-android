@@ -13,6 +13,10 @@ public class HttpUtils {
 
     private static AsyncHttpClient client = new AsyncHttpClient();
 
+    private HttpUtils() {
+
+    }
+
     public static void get(String url, RequestParams params, AsyncHttpResponseHandler responseHandler) {
         client.get(getAbsoluteUrl(url), params, responseHandler);
     }

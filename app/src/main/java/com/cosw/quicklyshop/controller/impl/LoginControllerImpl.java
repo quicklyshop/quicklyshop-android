@@ -45,21 +45,21 @@ public class LoginControllerImpl implements LoginController {
         HttpUtils.post(null, "/user/login", entity, "application/json", new TextHttpResponseHandler() {
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                String error = "An error ocurred in login: " + responseString;
+                String error = responseString;
                 Log.e(TAG, error, throwable);
                 callback.onFailed(error);
             }
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, String responseString) {
-                Log.d(TAG, "Successful login: " + responseString);
+                Log.d(TAG, responseString);
                 callback.onSuccess(responseString);
             }
         });
     }
 
     @Override
-    public void registerUser(User newuser, Callback callback) {
-
+    public void registerUser(User newuser, Callback callback) { // TODO
+        Log.e(TAG, "Por implementar");
     }
 }
