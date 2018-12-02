@@ -15,20 +15,30 @@
     <string name="text_button_createaccount">Únete</string>
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
-    <string name="username_card" tools:ignore="MissingTranslation">Uriel Ramírez</string>
+    <string name="toolbar_tittle_payment">Hacer Pago</string>
+    <string name="username_card">Uriel Ramírez</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">4 días</string>
     <string name="likenumbercard_card">10 Me Gusta</string>
     <string name="tab_search">Buscar</string>
-    <string name="tab_home">Aliados</string>
-    <string name="tab_profile">Perfil</string>
-    <string name="card_number" tools:ignore="MissingTranslation">Número de Tarjeta</string>
-    <string name="card_name" tools:ignore="MissingTranslation">Nombre Tarjeta</string>
-    <string name="card_owner" tools:ignore="MissingTranslation">Documento Titular</string>
-    <string name="owner_address" tools:ignore="MissingTranslation">Dirección Titular</string>
-    <string name="owner_phone" tools:ignore="MissingTranslation">Celular Titular</string>
-    <string name="owner_cvv" tools:ignore="MissingTranslation">CVV</string>
-    <string name="taxes_payment_number" tools:ignore="MissingTranslation">Numero de Cuotas</string>
+    <string name="tab_home">Home</string>
+    <string name="tab_profile">Yo</string>
+    <string name="card_number">Número de Tarjeta</string>
+    <string name="card_name">Nombre Tarjeta</string>
+    <string name="card_date">mm/aaaa</string>
+    <string name="card_owner">Documento Titular</string>
+    <string name="owner_address">Dirección Titular</string>
+    <string name="owner_phone">Celular Titular</string>
+    <string name="owner_cvv">CVV</string>
+    <string name="taxes_payment_number">Numero de Cuotas</string>
+    <string-array name="number_payments_taxes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" tools:ignore="MissingTranslation">Hello blank fragment</string>

@@ -21,6 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.Arrays;
+import com.cosw.quicklyshop.view.Payment;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -36,6 +37,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
+
+    public void goPayment(View view){
+        Intent intent = new Intent(this, Payment.class);
+        startActivity(intent);
+    }
+
     public void goHome(View view){
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
