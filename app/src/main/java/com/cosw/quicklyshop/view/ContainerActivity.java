@@ -9,9 +9,7 @@ import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.view.fragment.HomeFragment;
 import com.cosw.quicklyshop.view.fragment.ProfileFragment;
 import com.cosw.quicklyshop.view.fragment.SearchFragment;
-import com.roughike.bottombar.BottomBar;
-import com.roughike.bottombar.OnTabReselectListener;
-import com.roughike.bottombar.OnTabSelectListener;
+import com.roughike.bottombar.*;
 
 public class ContainerActivity extends AppCompatActivity {
     HomeFragment homeFragment;
