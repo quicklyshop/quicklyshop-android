@@ -17,9 +17,7 @@ public class Picture {
         this.like_number = like_number;
     }
 
-    public String getPicture() {
-        return picture;
-    }
+    public String getPicture() { return picture; }
 
     public void setPicture(String picture) {
         this.picture = picture;
@@ -33,9 +31,7 @@ public class Picture {
         this.userName = userName;
     }
 
-    public String getTime() {
-        return time;
-    }
+    public String getTime() { return time; }
 
     public void setTime(String time) {
         this.time = time;

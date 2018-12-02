@@ -35,16 +35,16 @@ public class ProfileFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
         showToolbar("", false, view);
 
-        RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.picturesProfileRecycler);
+        //RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.picturesProfileRecycler);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
-        picturesRecycler.setLayoutManager(linearLayoutManager);
+        //picturesRecycler.setLayoutManager(linearLayoutManager);
 
         PictureAdapterRecyclerView pictureAdapterRecyclerView =
                 new PictureAdapterRecyclerView(buidPictures(), R.layout.cardview_picture, getActivity());
-        picturesRecycler.setAdapter(pictureAdapterRecyclerView);
+        //picturesRecycler.setAdapter(pictureAdapterRecyclerView);
 
         return view;
     }
