@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingTop="20dp"
-            android:paddingBottom="20dp"
+            android:paddingBottom="40dp"
             android:layout_gravity="center|top"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -77,16 +77,19 @@
                 android:id="@+id/edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:text="@string/text_button_editProfile"
                 android:textColor="@android:color/white"
                 android:background="@color/colorPrimary"
                 />
 
+
+
             <Button
                 android:id="@+id/compra"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="3px"
+                android:layout_margin="10dp"
                 android:text="@string/text_button_realizarCompra"
                 android:textColor="@android:color/white"
                 android:background="@color/colorPrimary"
