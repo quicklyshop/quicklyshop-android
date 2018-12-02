@@ -22,11 +22,20 @@
     <string name="tab_profile">Yo</string>
     <string name="card_number">Número de Tarjeta</string>
     <string name="card_name">Nombre Tarjeta</string>
+    <string name="card_date">mm/aaaa</string>
     <string name="card_owner">Documento Titular</string>
     <string name="owner_address">Dirección Titular</string>
     <string name="owner_phone">Celular Titular</string>
     <string name="owner_cvv">CVV</string>
     <string name="taxes_payment_number">Numero de Cuotas</string>
+    <string-array name="number_payments_taxes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
