@@ -30,14 +30,6 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-//        (this.getApplicationContext())
-//                .getApplicationComponent()
-//                .newActivityComponentBuilder()
-//                .activity(this)
-//                .build()
-//                .inject(this);
-
     }
 
     public void goCreateAccount(View view){
