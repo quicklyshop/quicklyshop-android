@@ -24,10 +24,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.LoginActivity" />
         </activity>
-        <activity
-            android:name="com.cosw.quicklyshop.ReferenciaActivity"
-            android:label="@string/title_activity_referencia"
-            android:theme="@style/AppTheme" />
         <activity android:name="com.cosw.quicklyshop.view.ContainerActivity" />
         <activity android:name="com.cosw.quicklyshop.view.PictureDetailActivity"
             android:parentActivityName="com.cosw.quicklyshop.view.ContainerActivity">
