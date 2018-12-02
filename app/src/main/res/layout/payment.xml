@@ -28,7 +28,6 @@
                     android:layout_width="50dp"
                     android:layout_height="30dp"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentleft="true"
                     android:layout_marginLeft="0dp"
                     android:layout_marginTop="0dp"
                     android:adjustViewBounds="false"
@@ -214,7 +213,7 @@
 
                 </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <!--<android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/edittext_margin_createaccount"
@@ -228,18 +227,25 @@
                         android:minWidth="100dp"
                         android:prompt="@string/taxes_payment_number" />
 
-                </android.support.design.widget.TextInputLayout>
+                </android.support.design.widget.TextInputLayout>-->
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="45dp"
                     android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pagos a través de " />
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="54dp"
+                        android:layout_height="match_parent"
                         android:src="@drawable/logo_payu" />
+
                 </TableRow>
 
                 <Button
