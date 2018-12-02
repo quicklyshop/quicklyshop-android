@@ -27,9 +27,4 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*public void goProfile(Fragment fragment){
-        Intent intent = new Intent(this, ProfileFragment.class);
-        startActivityFromFragment(intent,ProfileFragment);
-    }*/
-
 }

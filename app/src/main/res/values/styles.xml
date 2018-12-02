@@ -18,6 +18,11 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="PrimaryButton" parent="Theme.AppCompat">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
     <style name="EditTextWhite" parent="TextAppearance.AppCompat">
         <item name="android:textColorHint">@color/editTextColorWhite</item>
         <item name="android:textSize">@dimen/edittext_textsize_login</item>

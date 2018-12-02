@@ -4,6 +4,7 @@
     <string name="hint_username">Nombre de usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="text_button_login">Login</string>
+    <string name="text_button_editProfile" tools:ignore="MissingTranslation">Editar Perfil</string>
     <string name="dont_have_account" tools:ignore="MissingTranslation">¿No tienes cuenta?,</string>
     <string name="create_here" tools:ignore="MissingTranslation">crea una aquí</string>
     <string name="hint_email">Correo</string>
