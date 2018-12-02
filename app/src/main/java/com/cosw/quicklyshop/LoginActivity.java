@@ -20,6 +20,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
+
+    public void goPayment(View view){
+        Intent intent = new Intent(this, Pay.class);
+        startActivity(intent);
+    }
+
     public void goHome(View view){
         Intent intent = new Intent(this, ContainerActivity.class);
         startActivity(intent);
