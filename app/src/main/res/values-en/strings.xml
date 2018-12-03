@@ -16,6 +16,8 @@
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="toolbar_tittle_payment">Hacer Pago</string>
+    <string name="toolbar_tittle_editProfile">Editar Perfil</string>
+    <string name="text_button_actualizar">Actualizar</string>
     <string name="username_card">Uriel Ramírez</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">4 días</string>
