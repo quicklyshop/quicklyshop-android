@@ -6,12 +6,12 @@ import android.support.v7.widget.Toolbar;
 
 import com.cosw.quicklyshop.R;
 
-public class Payment  extends AppCompatActivity{
+public class PaymentActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.payment);
+        setContentView(R.layout.activity_payment);
         showToolbar(getResources().getString(R.string.toolbar_tittle_payment), true);
 
     }
