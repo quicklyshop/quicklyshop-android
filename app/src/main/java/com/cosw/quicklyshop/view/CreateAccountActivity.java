@@ -9,7 +9,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.cosw.quicklyshop.LoginActivity;
 import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.controller.ControllerFactory;
 import com.cosw.quicklyshop.helpers.Callback;

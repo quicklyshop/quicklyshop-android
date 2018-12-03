@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".view.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,10 +26,10 @@
         </activity>
         <activity
             android:name=".view.CreateAccountActivity"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".view.LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cosw.quicklyshop.LoginActivity" />
+                android:value="com.cosw.quicklyshop.view.LoginActivity" />
         </activity>
         <activity android:name=".view.ContainerActivity" />
         <activity
@@ -42,15 +42,24 @@
         </activity>
         <activity
             android:name=".view.PaymentActivity"
-            android:parentActivityName=".LoginActivity">
+            android:parentActivityName=".view.LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cosw.quicklyshop.LoginActivity" />
+                android:value="com.cosw.quicklyshop.view.LoginActivity" />
         </activity>
         <activity
             android:name=".view.codescanner.CodeScannerActivity"
             android:label="@string/title_activity_scanner"
             android:theme="@style/AppTheme"></activity>
+
+        <activity android:name=".view.EditProfileActivity"
+            android:label="EditProfileActivity"
+            android:parentActivityName=".view.ContainerActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cosw.quicklyshop.view.ContainerActivity" />
+        </activity>
     </application>
 
 </manifest>

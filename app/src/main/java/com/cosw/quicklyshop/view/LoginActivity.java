@@ -1,4 +1,4 @@
-package com.cosw.quicklyshop;
+package com.cosw.quicklyshop.view;
 
 import android.content.Intent;
 import android.support.design.widget.TextInputEditText;
@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.controller.ControllerFactory;
 import com.cosw.quicklyshop.controller.LoginController;
 import com.cosw.quicklyshop.controller.SessionController;

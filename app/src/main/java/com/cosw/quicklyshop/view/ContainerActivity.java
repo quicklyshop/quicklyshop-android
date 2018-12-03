@@ -1,10 +1,12 @@
 package com.cosw.quicklyshop.view;
 
+import android.content.Intent;
 import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import com.cosw.quicklyshop.R;
@@ -56,4 +58,5 @@ public class ContainerActivity extends AppCompatActivity {
         });
 
     }
+
 }

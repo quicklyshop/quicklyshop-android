@@ -1,6 +1,7 @@
 package com.cosw.quicklyshop.view.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.cosw.quicklyshop.R;
@@ -18,6 +20,8 @@ import com.cosw.quicklyshop.adapter.PictureAdapterRecyclerView;
 import com.cosw.quicklyshop.dataholder.MainDataHolder;
 import com.cosw.quicklyshop.model.Picture;
 import com.cosw.quicklyshop.model.User;
+import com.cosw.quicklyshop.view.EditProfileActivity;
+import com.cosw.quicklyshop.view.PaymentActivity;
 
 import java.util.ArrayList;
 
@@ -61,6 +65,15 @@ public class ProfileFragment extends Fragment {
         } else {
             Log.e(TAG, "El usuario es nulo");
         }
+
+        Button editProfile = (Button) view.findViewById(R.id.edit);
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(view.getContext(), EditProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
         /* ---------- */
 
