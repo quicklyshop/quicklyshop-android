@@ -2,6 +2,9 @@ package com.cosw.quicklyshop.controller;
 
 import com.cosw.quicklyshop.controller.impl.LoginControllerImpl;
 import com.cosw.quicklyshop.controller.impl.SessionControllerImpl;
+import com.cosw.quicklyshop.controller.impl.UpdateControllerImpl;
+
+import lombok.Getter;
 
 public class ControllerFactory {
 
@@ -17,19 +20,14 @@ public class ControllerFactory {
 
     /* ---------- */
 
-    private LoginController loginController;
-    private SessionController sessionController;
+    @Getter private LoginController loginController;
+    @Getter private SessionController sessionController;
+    @Getter private UpdateController updateController;
 
     private ControllerFactory() {
         loginController = new LoginControllerImpl();
         sessionController = new SessionControllerImpl();
+        updateController = new UpdateControllerImpl();
     }
 
-    public LoginController getLoginController() {
-        return loginController;
-    }
-
-    public SessionController getSessionController() {
-        return sessionController;
-    }
 }

@@ -3,6 +3,7 @@ package com.cosw.quicklyshop.controller.impl;
 import android.util.Log;
 
 import com.cosw.quicklyshop.controller.SessionController;
+import com.cosw.quicklyshop.dataholder.MainDataHolder;
 import com.cosw.quicklyshop.helpers.Callback;
 import com.cosw.quicklyshop.helpers.HttpUtils;
 import com.cosw.quicklyshop.model.User;
@@ -66,6 +67,7 @@ public class SessionControllerImpl implements SessionController {
 
                     try {
                         User user = objectMapper.readValue(responseString, User.class);
+                        MainDataHolder.getInstance().setUser(user);
                         callback.onSuccess(user);
                     } catch (IOException e) {
                         callback.onFailure(e.getMessage());
