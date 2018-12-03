@@ -111,7 +111,6 @@
                         android:layout_height="wrap_content"
                         android:text="@string/dont_have_account"
                         android:textColor="@android:color/white"
-                        android:textStyle="bold"
                         android:textSize="@dimen/textsize_donthaveaccount"
                         />
 
@@ -121,7 +120,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/create_here"
                         android:textColor="@android:color/white"
-                        android:textStyle="bold"
+                        android:textStyle="bold|italic"
                         android:textSize="@dimen/textsize_donthaveaccount"
                         android:layout_toRightOf="@+id/dontHaveAccount"
                         android:onClick="goCreateAccount"

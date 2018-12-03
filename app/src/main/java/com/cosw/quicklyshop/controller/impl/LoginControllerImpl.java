@@ -59,7 +59,8 @@ public class LoginControllerImpl implements LoginController {
     }
 
     @Override
-    public void registerUser(User newuser, Callback callback) { // TODO
+    public void registerUser(User newuser, Callback<String> callback) { // TODO
         Log.e(TAG, "Por implementar");
+        callback.onSuccess("Exito");
     }
 }
