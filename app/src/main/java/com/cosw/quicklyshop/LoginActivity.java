@@ -99,6 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                     });
 
                 } catch (IOException e) {
+                    this.onFailed("Error parseando json de respuesta");
                     Log.e(TAG, "Error en parsing de json de respuesta" ,e);
                 }
 

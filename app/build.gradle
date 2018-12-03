@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.cosw.quicklyshop"
-        minSdkVersion 15
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
     }
 }
 
@@ -35,5 +39,9 @@ dependencies {
     implementation 'com.fasterxml.jackson.core:jackson-core:2.9.6'
     implementation 'com.fasterxml.jackson.core:jackson-annotations:2.9.6'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.9.6'
+
+    implementation 'com.budiyev.android:code-scanner:2.0.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
 }

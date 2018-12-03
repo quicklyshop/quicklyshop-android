@@ -2,7 +2,9 @@ package com.cosw.quicklyshop.view.fragment;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,6 +17,8 @@ import android.view.ViewGroup;
 import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.adapter.PictureAdapterRecyclerView;
 import com.cosw.quicklyshop.model.Picture;
+import com.cosw.quicklyshop.view.ContainerActivity;
+import com.cosw.quicklyshop.view.codescanner.CodeScannerActivity;
 
 import java.util.ArrayList;
 
@@ -47,6 +51,16 @@ public class HomeFragment extends Fragment {
                 new PictureAdapterRecyclerView(buidPictures(), R.layout.cardview_picture, getActivity());
         picturesRecycler.setAdapter(pictureAdapterRecyclerView);
 
+
+        FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), CodeScannerActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

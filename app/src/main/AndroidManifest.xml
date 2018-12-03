@@ -3,15 +3,21 @@
     package="com.cosw.quicklyshop">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="false" />
 
     <application
-        android:debuggable="true"
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.cosw.quicklyshop.LoginActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,27 +25,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.cosw.quicklyshop.view.CreateAccountActivity"
-            android:parentActivityName="com.cosw.quicklyshop.LoginActivity">
+            android:name=".view.CreateAccountActivity"
+            android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.LoginActivity" />
         </activity>
-        <activity android:name="com.cosw.quicklyshop.view.ContainerActivity" />
-        <activity android:name="com.cosw.quicklyshop.view.PictureDetailActivity"
-            android:parentActivityName="com.cosw.quicklyshop.view.ContainerActivity">
+        <activity android:name=".view.ContainerActivity" />
+        <activity
+            android:name=".view.PictureDetailActivity"
+            android:parentActivityName=".view.ContainerActivity">
             >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.view.ContainerActivity" />
         </activity>
         <activity
-            android:name="com.cosw.quicklyshop.view.Payment"
-            android:parentActivityName="com.cosw.quicklyshop.LoginActivity">
+            android:name=".view.Payment"
+            android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.LoginActivity" />
         </activity>
+        <activity
+            android:name=".view.codescanner.CodeScannerActivity"
+            android:label="@string/title_activity_scanner"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
