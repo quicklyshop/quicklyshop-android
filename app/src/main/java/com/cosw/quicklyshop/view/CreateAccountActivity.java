@@ -1,6 +1,7 @@
 package com.cosw.quicklyshop.view;
 
 import android.content.Intent;
+import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -12,7 +13,9 @@ import com.cosw.quicklyshop.LoginActivity;
 import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.controller.ControllerFactory;
 import com.cosw.quicklyshop.helpers.Callback;
+import com.cosw.quicklyshop.model.RegistrationForm;
 import com.cosw.quicklyshop.model.User;
+import com.cosw.quicklyshop.model.UserLogin;
 
 import java.util.Arrays;
 
@@ -37,9 +40,24 @@ public class CreateAccountActivity extends AppCompatActivity {
     public void createAccount(View view) {
         Log.d(TAG, "Hace llamado de crear cuenta");
 
-        User user = new User();
+        TextInputEditText password = findViewById(R.id.password_createaccount);
+        TextInputEditText confirm = findViewById(R.id.confirmPassword);
+        if (!password.getText().toString().equals(confirm.getText().toString())) {
+            Toast.makeText(getApplicationContext(), "Las contrasenas no coinciden", Toast.LENGTH_LONG).show();
+            return;
+        }
 
-        ControllerFactory.getInstance().getLoginController().registerUser(user, new Callback<String>() {
+        /* ------ */
+
+        User user = getUserForm();
+
+        UserLogin ul = getUserLoginForm();
+
+        RegistrationForm rf = new RegistrationForm(user, ul);
+
+        /* --------- */
+
+        ControllerFactory.getInstance().getLoginController().registerUser(rf, new Callback<String>() {
             @Override
             public void onSuccess(String... inputs) {
                 Log.d(TAG, "Registrado satisfatoriamente: " + Arrays.asList(inputs));
@@ -48,11 +66,41 @@ public class CreateAccountActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailed(String error) {
+            public void onFailure(String error) {
                 Log.e(TAG, "Ocurrio un error al registrar: " + error);
                 Toast.makeText(getApplicationContext(), "Error: " + error, Toast.LENGTH_LONG).show();
             }
         });
+    }
+
+    public User getUserForm() {
+        User user = new User();
+
+        TextInputEditText field = findViewById(R.id.email);
+        user.setEmail(field.getText().toString());
+        user.setUsername(field.getText().toString());
+
+        field = findViewById(R.id.name);
+        user.setFirstname(field.getText().toString());
+        field = findViewById(R.id.email); // TODO
+        user.setLastname(field.getText().toString());
+        field = findViewById(R.id.email); // TODO
+        user.setAddress(field.getText().toString());
+        field = findViewById(R.id.email); // TODO
+        user.setPhone(field.getText().toString());
+
+        return user;
+    }
+
+    public UserLogin getUserLoginForm(){
+        UserLogin ul = new UserLogin();
+
+        TextInputEditText field = findViewById(R.id.email);
+        ul.setUsername(field.getText().toString());
+        field = findViewById(R.id.password_createaccount);
+        ul.setPassword(field.getText().toString());
+
+        return ul;
     }
 
     public void goToLogin(View view) {

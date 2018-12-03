@@ -5,9 +5,9 @@ import android.util.Log;
 import com.cosw.quicklyshop.controller.LoginController;
 import com.cosw.quicklyshop.helpers.Callback;
 import com.cosw.quicklyshop.helpers.HttpUtils;
-import com.cosw.quicklyshop.model.User;
-import com.cosw.quicklyshop.model.UserLogin;
-import com.loopj.android.http.RequestParams;
+import com.cosw.quicklyshop.model.RegistrationForm;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.loopj.android.http.TextHttpResponseHandler;
 
 import org.json.JSONException;
@@ -29,8 +29,6 @@ public class LoginControllerImpl implements LoginController {
     public void loginWithUsernameAndPassword(String username, String password, final Callback<String> callback) {
 //        UserLogin ul = new UserLogin(username, password);
 
-        String json = "";
-
         StringEntity entity = null;
 
         JSONObject jsonParams = new JSONObject();
@@ -47,7 +45,7 @@ public class LoginControllerImpl implements LoginController {
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 String error = responseString;
                 Log.e(TAG, error, throwable);
-                callback.onFailed(error);
+                callback.onFailure(error);
             }
 
             @Override
@@ -59,8 +57,34 @@ public class LoginControllerImpl implements LoginController {
     }
 
     @Override
-    public void registerUser(User newuser, Callback<String> callback) { // TODO
-        Log.e(TAG, "Por implementar");
-        callback.onSuccess("Exito");
+    public void registerUser(RegistrationForm newuser, Callback<String> callback) {
+        Log.d(TAG, "Intenta realizar registro de usuario: " + newuser);
+
+        ObjectMapper om = new ObjectMapper();
+        StringEntity entity = null;
+
+        try {
+            String json = om.writeValueAsString(newuser);
+            Log.d(TAG, "JSON: " + json);
+            entity = new StringEntity(json);
+        } catch (JsonProcessingException | UnsupportedEncodingException e) {
+            callback.onFailure(e.getMessage());
+            return;
+        }
+
+        HttpUtils.post(null, "/user/register", entity, "application/json", new TextHttpResponseHandler() {
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                String error = responseString;
+                Log.e(TAG, error, throwable);
+                callback.onFailure(error);
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, String responseString) {
+                Log.d(TAG, responseString);
+                callback.onSuccess(responseString);
+            }
+        });
     }
 }

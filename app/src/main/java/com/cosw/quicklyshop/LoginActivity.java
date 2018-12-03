@@ -92,21 +92,21 @@ public class LoginActivity extends AppCompatActivity {
                         }
 
                         @Override
-                        public void onFailed(String error) {
+                        public void onFailure(String error) {
                             Log.e(TAG, "Error getting user data: " + error);
                             Toast.makeText(getApplicationContext(), "Failed to login: " + error, Toast.LENGTH_SHORT).show();
                         }
                     });
 
                 } catch (IOException e) {
-                    this.onFailed("Error parseando json de respuesta");
+                    this.onFailure("Error parseando json de respuesta");
                     Log.e(TAG, "Error en parsing de json de respuesta" ,e);
                 }
 
             }
 
             @Override
-            public void onFailed(String error) {
+            public void onFailure(String error) {
                 Log.e(TAG, "Error: " + error);
                 Toast.makeText(getApplicationContext(), "Failed to login: " + error, Toast.LENGTH_SHORT).show();
 

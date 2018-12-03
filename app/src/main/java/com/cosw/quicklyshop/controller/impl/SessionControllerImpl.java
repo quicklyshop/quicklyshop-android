@@ -48,7 +48,7 @@ public class SessionControllerImpl implements SessionController {
     @Override
     public void getUser(final Callback<User> callback) {
         if (sessionToken == null) {
-            callback.onFailed("Is not logged in");
+            callback.onFailure("Is not logged in");
             return;
         }
 
@@ -57,7 +57,7 @@ public class SessionControllerImpl implements SessionController {
             HttpUtils.get("/user/" + this.username, rp, new TextHttpResponseHandler() {
                 @Override
                 public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-                    callback.onFailed(responseString);
+                    callback.onFailure(responseString);
                 }
 
                 @Override
@@ -68,7 +68,7 @@ public class SessionControllerImpl implements SessionController {
                         User user = objectMapper.readValue(responseString, User.class);
                         callback.onSuccess(user);
                     } catch (IOException e) {
-                        callback.onFailed(e.getMessage());
+                        callback.onFailure(e.getMessage());
                     }
                 }
             });
