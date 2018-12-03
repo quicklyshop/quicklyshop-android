@@ -10,7 +10,7 @@
     <string name="create_here">crea una aquí</string>
     <string name="hint_email">Correo</string>
     <string name="hint_name">Nombre</string>
-    <string name="hint_user">Usuario</string>
+    <string name="hint_lastname">Segundo nombre</string>
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="text_button_createaccount">Únete</string>
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
@@ -52,4 +52,6 @@
     <string name="close">Volver a usar</string>
     <string name="scanner_error">Ocurrio un error al escanear</string>
     <string name="copied_to_clipboard">Codigo usado</string>
+    <string name="hint_phone">Telefono</string>
+    <string name="hint_address">Direccion</string>
 </resources>

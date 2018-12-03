@@ -34,7 +34,39 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/email"
+                    android:id="@+id/name_createaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_name"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                android:layout_marginTop="@dimen/edittext_margin_createaccount"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/lastname_createaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_lastname"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                android:layout_marginTop="@dimen/edittext_margin_createaccount"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email_createaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_email"
@@ -50,13 +82,14 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/name"
+                    android:id="@+id/phone_createaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_name"
+                    android:hint="@string/hint_phone"
                     />
 
             </android.support.design.widget.TextInputLayout>
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,13 +98,15 @@
                 >
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/user"
+                    android:id="@+id/address_createaccount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_user"
+                    android:hint="@string/hint_address"
                     />
 
             </android.support.design.widget.TextInputLayout>
+
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

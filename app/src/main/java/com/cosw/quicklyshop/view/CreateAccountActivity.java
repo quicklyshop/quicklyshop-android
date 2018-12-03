@@ -50,9 +50,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         /* ------ */
 
         User user = getUserForm();
-
         UserLogin ul = getUserLoginForm();
-
         RegistrationForm rf = new RegistrationForm(user, ul);
 
         /* --------- */
@@ -76,17 +74,17 @@ public class CreateAccountActivity extends AppCompatActivity {
     public User getUserForm() {
         User user = new User();
 
-        TextInputEditText field = findViewById(R.id.email);
+        TextInputEditText field = findViewById(R.id.email_createaccount);
         user.setEmail(field.getText().toString());
         user.setUsername(field.getText().toString());
 
-        field = findViewById(R.id.name);
+        field = findViewById(R.id.name_createaccount);
         user.setFirstname(field.getText().toString());
-        field = findViewById(R.id.email); // TODO
+        field = findViewById(R.id.lastname_createaccount);
         user.setLastname(field.getText().toString());
-        field = findViewById(R.id.email); // TODO
+        field = findViewById(R.id.address_createaccount);
         user.setAddress(field.getText().toString());
-        field = findViewById(R.id.email); // TODO
+        field = findViewById(R.id.phone_createaccount);
         user.setPhone(field.getText().toString());
 
         return user;
@@ -95,7 +93,7 @@ public class CreateAccountActivity extends AppCompatActivity {
     public UserLogin getUserLoginForm(){
         UserLogin ul = new UserLogin();
 
-        TextInputEditText field = findViewById(R.id.email);
+        TextInputEditText field = findViewById(R.id.email_createaccount);
         ul.setUsername(field.getText().toString());
         field = findViewById(R.id.password_createaccount);
         ul.setPassword(field.getText().toString());
