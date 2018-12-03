@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.cosw.quicklyshop.controller.ControllerFactory;
 import com.cosw.quicklyshop.controller.LoginController;
+import com.cosw.quicklyshop.controller.SessionController;
 import com.cosw.quicklyshop.dataholder.MainDataHolder;
 import com.cosw.quicklyshop.helpers.Callback;
 import com.cosw.quicklyshop.model.User;
@@ -79,9 +80,10 @@ public class LoginActivity extends AppCompatActivity {
 
                     String token = tokenNode.asText();
 
-                    ControllerFactory.getInstance().getSessionController().setSessionToken(token);
-                    ControllerFactory.getInstance().getSessionController().setUsername(username.getText().toString());
-                    ControllerFactory.getInstance().getSessionController().getUser(new Callback<User>() {
+                    SessionController sc = ControllerFactory.getInstance().getSessionController();
+                    sc.setSessionToken(token);
+                    sc.setUsername(username.getText().toString());
+                    sc.getUser(new Callback<User>() {
                         @Override
                         public void onSuccess(User... inputs) {
                             MainDataHolder.getInstance().setUser(inputs[0]);
@@ -99,8 +101,8 @@ public class LoginActivity extends AppCompatActivity {
                     });
 
                 } catch (IOException e) {
-                    this.onFailure("Error parseando json de respuesta");
                     Log.e(TAG, "Error en parsing de json de respuesta" ,e);
+                    this.onFailure("Error parseando json de respuesta");
                 }
 
             }
