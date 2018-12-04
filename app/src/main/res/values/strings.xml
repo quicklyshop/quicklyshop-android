@@ -6,6 +6,10 @@
     <string name="text_button_login">Login</string>
     <string name="text_button_editProfile">Editar Perfil</string>
     <string name="text_button_realizarCompra">Realizar Compra</string>
+    <string name="text_button_agregarProducto">Agregar otro producto</string>
+    <string name="text_button_eliminarProducto">Eliminar Producto</string>
+    <string name="text_button_eliminarProductos">Eliminar todos</string>
+    <string name="text_button_realizarPago">Pagar</string>
     <string name="dont_have_account">¿No tienes cuenta?,</string>
     <string name="create_here">crea una aquí</string>
     <string name="hint_email">Correo</string>
@@ -17,6 +21,7 @@
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="toolbar_tittle_payment">Hacer Pago</string>
+    <string name="toolbar_tittle_factura">Factura</string>
     <string name="toolbar_tittle_editProfile">Editar Perfil</string>
     <string name="username_card">Uriel Ramírez</string>
     <string name="firstword_card">Hace</string>
