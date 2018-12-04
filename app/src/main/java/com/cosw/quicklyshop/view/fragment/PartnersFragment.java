@@ -67,9 +67,15 @@ public class PartnersFragment extends Fragment {
 
     public ArrayList<Picture> buidPictures(){
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("http://www.novalandtours.com/images/guide/guilin.jpg", "Uriel Ramírez", "4 días", "3 Me Gusta"));
-        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Juan Pablo", "3 días", "10 Me Gusta"));
-        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Anahi Salgado", "2 días", "9 Me Gusta"));
+        pictures.add(new Picture("https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Almacenes_exito_logo.svg/1028px-Almacenes_exito_logo.svg.png", " Exito"));
+        pictures.add(new Picture("https://upload.wikimedia.org/wikipedia/commons/3/3d/Carulla.png", "Carulla"));
+        pictures.add(new Picture("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Logo_Jumbo_Cencosud.png/200px-Logo_Jumbo_Cencosud.png", "Jumbo"));
+        pictures.add(new Picture("https://s3-eu-west-1.amazonaws.com/tpd/logos/4c91874300006400050dde6a/0x0.png", "Bershka"));
+        pictures.add(new Picture("http://www.conmarca.com/archivos/espectacles_foto_gran/280614125626_pull-and-bear_gr.jpg", "Pull and Bear"));
+        pictures.add(new Picture("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/245px-H%26M-Logo.svg.png", " H & M"));
+        pictures.add(new Picture("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Falabella.svg/1280px-Falabella.svg.png", "Falabella"));
+        pictures.add(new Picture("https://pbs.twimg.com/profile_images/971352713517821952/SvetxMXi_400x400.jpg", "Straduivarius"));
+        pictures.add(new Picture("http://unicentrodearmenia.com/wp-content/uploads/2016/06/gef.png", "GEF"));
         return pictures;
     }
 

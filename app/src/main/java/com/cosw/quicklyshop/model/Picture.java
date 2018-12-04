@@ -6,15 +6,11 @@ package com.cosw.quicklyshop.model;
 public class Picture {
 
     private String picture;
-    private String userName;
-    private String time;
-    private String like_number = "0";
+    private String companyName;
 
-    public Picture(String picture, String userName, String time, String like_number) {
+    public Picture(String picture, String companyName) {
         this.picture = picture;
-        this.userName = userName;
-        this.time = time;
-        this.like_number = like_number;
+        this.companyName = companyName;
     }
 
     public String getPicture() { return picture; }
@@ -24,24 +20,11 @@ public class Picture {
     }
 
     public String getUserName() {
-        return userName;
+        return companyName;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.companyName = userName;
     }
 
-    public String getTime() { return time; }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
-
-    public String getLike_number() {
-        return like_number;
-    }
-
-    public void setLike_number(String like_number) {
-        this.like_number = like_number;
-    }
 }
