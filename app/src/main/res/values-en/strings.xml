@@ -10,20 +10,20 @@
     <string name="create_here">crea una aquí</string>
     <string name="hint_email">Correo</string>
     <string name="hint_name">Nombre</string>
-    <string name="hint_lastname">Segundo nombre</string>
+    <string name="hint_lastname">Apellido</string>
     <string name="hint_confirm_password">Confirmar Contraseña</string>
     <string name="text_button_createaccount">Únete</string>
+    <string name="text_button_actualizar">Actualizar</string>
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="toolbar_tittle_payment">Hacer Pago</string>
     <string name="toolbar_tittle_editProfile">Editar Perfil</string>
-    <string name="text_button_actualizar">Actualizar</string>
     <string name="username_card">Uriel Ramírez</string>
     <string name="firstword_card">Hace</string>
     <string name="timecard_card">4 días</string>
     <string name="likenumbercard_card">10 Me Gusta</string>
     <string name="tab_search">Buscar</string>
-    <string name="tab_home">Home</string>
+    <string name="tab_home">Aliados</string>
     <string name="tab_profile">Yo</string>
     <string name="card_number">Número de Tarjeta</string>
     <string name="card_name">Nombre Tarjeta</string>

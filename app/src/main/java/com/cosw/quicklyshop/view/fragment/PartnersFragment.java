@@ -26,10 +26,10 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  *
  */
-public class HomeFragment extends Fragment {
+public class PartnersFragment extends Fragment {
 
 
-    public HomeFragment() {
+    public PartnersFragment() {
         // Required empty public constructor
     }
 
