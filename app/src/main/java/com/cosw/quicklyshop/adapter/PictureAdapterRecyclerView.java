@@ -43,9 +43,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     @Override
     public void onBindViewHolder(PictureViewHolder holder, int position) {
         Picture picture = pictures.get(position);
-        holder.usernameCard.setText(picture.getUserName());
-        holder.timeCard.setText(picture.getTime());
-        holder.likeNumberCard.setText(picture.getLike_number());
+        holder.comanynameCard.setText(picture.getUserName());
         Picasso.with(activity).load(picture.getPicture()).into(holder.pictureCard);
 
         holder.pictureCard.setOnClickListener(new View.OnClickListener() {
@@ -78,18 +76,14 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
     public class PictureViewHolder extends RecyclerView.ViewHolder{
 
         private ImageView pictureCard;
-        private TextView usernameCard;
-        private TextView timeCard;
-        private TextView likeNumberCard;
+        private TextView comanynameCard;
 
 
         public PictureViewHolder(View itemView) {
             super(itemView);
 
             pictureCard     = (ImageView) itemView.findViewById(R.id.pictureCard);
-            usernameCard    = (TextView) itemView.findViewById(R.id.userNameCard);
-            timeCard        = (TextView) itemView.findViewById(R.id.timeCard);
-            likeNumberCard  = (TextView) itemView.findViewById(R.id.likeNumberCard);
+            comanynameCard    = (TextView) itemView.findViewById(R.id.companyNameCard);
 
         }
     }
