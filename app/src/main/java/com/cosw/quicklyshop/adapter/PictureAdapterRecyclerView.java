@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.cosw.quicklyshop.R;
 import com.cosw.quicklyshop.model.Picture;
-import com.cosw.quicklyshop.view.PictureDetailActivity;
+import com.cosw.quicklyshop.view.codescanner.CodeScannerActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -49,7 +49,7 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
         holder.pictureCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, PictureDetailActivity.class);
+                Intent intent = new Intent(activity, CodeScannerActivity.class);
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
                     Explode explode = new Explode();

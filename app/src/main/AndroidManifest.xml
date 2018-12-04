@@ -33,14 +33,6 @@
         </activity>
         <activity android:name=".view.ContainerActivity" />
         <activity
-            android:name=".view.PictureDetailActivity"
-            android:parentActivityName=".view.ContainerActivity">
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.cosw.quicklyshop.view.ContainerActivity" />
-        </activity>
-        <activity
             android:name=".view.PaymentActivity"
             android:parentActivityName=".view.LoginActivity">
             <meta-data
