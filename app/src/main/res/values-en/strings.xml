@@ -12,11 +12,16 @@
     <string name="hint_name">Nombre</string>
     <string name="hint_lastname">Apellido</string>
     <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="text_button_agregarProducto">Agregar otro producto</string>
+    <string name="text_button_eliminarProducto">Eliminar Producto</string>
+    <string name="text_button_eliminarProductos">Eliminar todos</string>
+    <string name="text_button_realizarPago">Pagar</string>
     <string name="text_button_createaccount">Únete</string>
     <string name="text_button_actualizar">Actualizar</string>
     <string name="do_payment" tools:ignore="MissingTranslation">Confirmar y enviar pedido</string>
     <string name="toolbar_tittle_createaccount">Crear Cuenta</string>
     <string name="toolbar_tittle_payment">Hacer Pago</string>
+    <string name="toolbar_tittle_factura">Factura</string>
     <string name="toolbar_tittle_editProfile">Editar Perfil</string>
     <string name="username_card">Uriel Ramírez</string>
     <string name="firstword_card">Hace</string>
