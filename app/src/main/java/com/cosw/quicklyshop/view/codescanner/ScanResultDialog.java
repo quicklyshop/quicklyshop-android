@@ -23,7 +23,7 @@ public class ScanResultDialog extends AppCompatDialog {
         //noinspection ConstantConditions
         ((TextView) findViewById(R.id.format)).setText(String.valueOf(result.getBarcodeFormat()));
         //noinspection ConstantConditions
-        findViewById(R.id.copy).setOnClickListener(v -> {
+        findViewById(R.id.usenselectother_scanner).setOnClickListener(v -> {
             //noinspection ConstantConditions
             ((ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE))
                     .setPrimaryClip(ClipData.newPlainText(null, result.getText()));
@@ -31,7 +31,7 @@ public class ScanResultDialog extends AppCompatDialog {
             dismiss();
         });
         //noinspection ConstantConditions
-        findViewById(R.id.close).setOnClickListener(v -> dismiss());
+        findViewById(R.id.gotocheckout_scanner).setOnClickListener(v -> dismiss());
     }
 
     private static int resolveDialogTheme(@NonNull Context context) {

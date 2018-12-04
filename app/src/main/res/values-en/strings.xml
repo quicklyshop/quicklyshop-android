@@ -55,10 +55,11 @@
     <string name="transitionname_picture" tools:ignore="MissingTranslation">transitionnamepicture</string>
     <string name="title_activity_scanner">ScannerActivity</string>
     <string name="scan_result">Scancode</string>
-    <string name="copy">Usar</string>
-    <string name="close">Volver a usar</string>
+    <string name="usentakeother_scanner">Usar</string>
+    <string name="gotocheckout_scanner">Volver a usar</string>
     <string name="scanner_error">Ocurrio un error al escanear</string>
     <string name="copied_to_clipboard">Codigo usado</string>
     <string name="hint_phone">Telefono</string>
     <string name="hint_address">Direccion</string>
+    <string name="dontuse_scanner">Usar otro</string>
 </resources>

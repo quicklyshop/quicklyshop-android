@@ -38,21 +38,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="end"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/copy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/copy"
+            android:id="@+id/dontuse_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dontuse_scanner"
             tools:ignore="ButtonStyle"/>
 
         <Button
-            android:id="@+id/close"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/usenselectother_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/usentakeother_scanner"
+            tools:ignore="ButtonStyle"/>
+
+        <Button
+            android:id="@+id/gotocheckout_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
-            android:text="@string/close"
+            android:text="@string/gotocheckout_scanner"
             tools:ignore="ButtonStyle"/>
     </LinearLayout>
 </LinearLayout>
