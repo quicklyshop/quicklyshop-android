@@ -6,10 +6,10 @@
     <string name="text_button_login">Login</string>
     <string name="text_button_editProfile">Editar Perfil</string>
     <string name="text_button_realizarCompra">Realizar Compra</string>
-    <string name="text_button_agregarProducto">Agregar otro producto</string>
-    <string name="text_button_eliminarProducto">Eliminar Producto</string>
+    <string name="text_button_agregarProducto">Agregar otro</string>
+    <string name="text_button_eliminarProducto">Eliminar</string>
     <string name="text_button_eliminarProductos">Eliminar todos</string>
-    <string name="text_button_realizarPago">Pagar</string>
+    <string name="text_button_realizarPago">Realizar pago</string>
     <string name="dont_have_account">¿No tienes cuenta?,</string>
     <string name="create_here">crea una aquí</string>
     <string name="hint_email">Correo</string>
@@ -63,4 +63,5 @@
     <string name="hint_address">Direccion</string>
     <string name="dontuse_scanner">Usar otro</string>
     <string name="title_activity_checkout">Factura</string>
+    <string name="product_card">Producto</string>
 </resources>

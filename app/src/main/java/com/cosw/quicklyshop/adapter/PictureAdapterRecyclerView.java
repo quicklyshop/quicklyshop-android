@@ -84,7 +84,6 @@ public class PictureAdapterRecyclerView extends RecyclerView.Adapter<PictureAdap
 
             pictureCard     = (ImageView) itemView.findViewById(R.id.pictureCard);
             comanynameCard    = (TextView) itemView.findViewById(R.id.companyNameCard);
-
         }
     }
 }

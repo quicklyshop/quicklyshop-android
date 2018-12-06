@@ -24,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".view.CreateAccountActivity"
             android:parentActivityName=".view.LoginActivity">
@@ -31,25 +32,45 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.view.LoginActivity" />
         </activity>
-        <activity android:name=".view.ContainerActivity" />
+
         <activity
-            android:name=".view.PaymentActivity"
-            android:parentActivityName=".view.LoginActivity">
+            android:name=".view.ContainerActivity"
+            android:parentActivityName=".view.LoginActivity"
+            >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cosw.quicklyshop.view.LoginActivity" />
         </activity>
+
+        <activity
+            android:name=".view.PaymentActivity"
+            android:parentActivityName=".view.FacturaActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cosw.quicklyshop.view.FacturaActivity" />
+        </activity>
+
         <activity
             android:name=".view.codescanner.CodeScannerActivity"
             android:label="@string/title_activity_scanner"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+
+        </activity>
 
         <activity
             android:name=".view.FacturaActivity"
             android:label="@string/title_activity_checkout"
             android:theme="@style/AppTheme"
-            ></activity>
-        <activity android:name=".view.EditProfileActivity"
+            android:parentActivityName=".view.ContainerActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "com.cosw.quicklyshop.view.ContainerActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.EditProfileActivity"
             android:label="EditProfileActivity"
             android:parentActivityName=".view.ContainerActivity"
             >

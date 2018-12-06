@@ -33,4 +33,5 @@
     <dimen name="margintop_usernametoolbarprofile">-100dp</dimen>
     <dimen name="limitY_usernametoolbarprofile">-250dp</dimen>
     <dimen name="margintoptargety_usernametoolbarprofile">-5dp</dimen>
+    <dimen name="product_height_cardview">150dp</dimen>
 </resources>
