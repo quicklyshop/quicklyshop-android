@@ -58,8 +58,9 @@
     <string name="usentakeother_scanner">Usar y tomar otro</string>
     <string name="gotocheckout_scanner">Ir a carrito</string>
     <string name="scanner_error">Ocurrio un error al escanear</string>
-    <string name="copied_to_clipboard">Codigo usado</string>
+    <string name="product_added">Producto agregado</string>
     <string name="hint_phone">Telefono</string>
     <string name="hint_address">Direccion</string>
     <string name="dontuse_scanner">Usar otro</string>
+    <string name="title_activity_checkout">Factura</string>
 </resources>

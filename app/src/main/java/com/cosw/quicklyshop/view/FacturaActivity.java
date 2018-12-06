@@ -11,8 +11,7 @@ public class FacturaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_factura);
-        showToolbar(getResources().getString(R.string.toolbar_tittle_factura), true);
-
+//        showToolbar(getResources().getString(R.string.toolbar_tittle_factura), true);
     }
 
     public void showToolbar(String tittle, boolean upButton){

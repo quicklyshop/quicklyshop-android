@@ -1,7 +1,5 @@
 package com.cosw.quicklyshop.view.codescanner;
 
-import android.content.ClipData;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.support.v7.app.AppCompatDialog;
 import android.util.TypedValue;
@@ -25,13 +23,13 @@ public class ScanResultDialog extends AppCompatDialog {
         //noinspection ConstantConditions
         findViewById(R.id.usenselectother_scanner).setOnClickListener(v -> {
             //noinspection ConstantConditions
-            ((ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE))
-                    .setPrimaryClip(ClipData.newPlainText(null, result.getText()));
-            Toast.makeText(context, R.string.copied_to_clipboard, Toast.LENGTH_LONG).show();
+//            ((ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE))
+//                    .setPrimaryClip(ClipData.newPlainText(null, result.getText()));
+            Toast.makeText(context, R.string.product_added, Toast.LENGTH_LONG).show();
             dismiss();
         });
         //noinspection ConstantConditions
-        findViewById(R.id.gotocheckout_scanner).setOnClickListener(v -> dismiss());
+        findViewById(R.id.usenselectother_scanner).setOnClickListener(v -> dismiss());
     }
 
     private static int resolveDialogTheme(@NonNull Context context) {

@@ -1,6 +1,10 @@
 package com.cosw.quicklyshop.dataholder;
 
+import com.cosw.quicklyshop.model.Product;
 import com.cosw.quicklyshop.model.User;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,8 +24,11 @@ public class MainDataHolder {
     @Getter @Setter
     User user;
 
-    private MainDataHolder() {
+    @Getter @Setter
+    List<Product> selectedProducts;
 
+    private MainDataHolder() {
+        selectedProducts = new ArrayList<>();
     }
 
 }
